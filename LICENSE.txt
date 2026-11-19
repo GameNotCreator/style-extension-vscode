@@ -1,0 +1,13 @@
+Local recovery and reconstructed development version, requested by the user
+who identifies themselves as the author of the Vira code and artwork.
+
+Existing rights in the recovered Vira artwork, fonts, themes and illustrations
+remain with their respective author(s). This recovery does not grant a new
+public redistribution license to these materials.
+
+The newly written src/, scripts/ and test/ code is provided for the user's
+local development and modification. No runtime license check, subscription,
+authentication, trial limit or network service is implemented.
+
+Original distribution notice, retained for provenance:
+Terms and Conditions at https://vira.build/terms-conditions

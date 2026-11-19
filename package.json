@@ -1,0 +1,473 @@
+{
+  "name": "vira-local",
+  "displayName": "Vira Local",
+  "publisher": "hedi-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Thèmes et icônes Vira récupérés localement, avec commandes visuelles autonomes.",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "icon": "logo.png",
+  "main": "./src/extension.cjs",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": true
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "package": "vsce package --no-dependencies --allow-missing-repository"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Vira Local",
+      "type": "object",
+      "properties": {
+        "viraLocal.accent": {
+          "order": 1,
+          "type": "string",
+          "default": "Teal",
+          "enum": [
+            "Vira",
+            "White",
+            "Tomato",
+            "Orange",
+            "Yellow",
+            "Acid Lime",
+            "Lime",
+            "Teal",
+            "Bright Teal",
+            "Cyan",
+            "Blue",
+            "Indigo",
+            "Purple",
+            "Pink"
+          ],
+          "description": "Set the accent color used across the interface and icons.",
+          "scope": "window"
+        },
+        "viraLocal.customAccent": {
+          "order": 2,
+          "type": "string",
+          "markdownDescription": "The custom accent **will override** the `#viraLocal.accent#` color. Run clear accent command or manually remove the value.",
+          "scope": "window",
+          "pattern": "^$|^#([A-Fa-f0-9]{6})$",
+          "patternErrorMessage": "Invalid color format. Enter a valid 6 digits hex color."
+        },
+        "viraLocal.accentIntensity": {
+          "order": 3,
+          "type": "string",
+          "default": "vivid",
+          "enum": [
+            "soft",
+            "normal",
+            "vivid"
+          ],
+          "enumDescriptions": [
+            "Softer, less saturated built-in accent colors.",
+            "Balanced built-in accent colors.",
+            "More saturated built-in accent colors (default)."
+          ],
+          "description": "Adjust saturation of built-in accent colors across the interface and icons.",
+          "scope": "window"
+        },
+        "viraLocal.useOutlinedIcons": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Use outlined folder icons.",
+          "scope": "window"
+        },
+        "viraLocal.folderAccentMode": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Apply accent color to open/expanded explorer folder icons. When off, open folders keep named glyphs without accent tint.",
+          "scope": "window"
+        },
+        "viraLocal.useTopTabIndicator": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Put the current tab indicator at the top instead of the bottom.",
+          "scope": "window"
+        },
+        "viraLocal.syncThemesAndIcons": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Synchronize file icons themes with UI themes when switching themes.",
+          "scope": "window"
+        },
+        "viraLocal.syncProductIcons": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Synchronize the product icon theme (Vira Solid / Vira Outline) with the outlined folder icons setting.",
+          "scope": "window"
+        },
+        "viraLocal.showBorders": {
+          "type": "boolean",
+          "default": false,
+          "scope": "window",
+          "markdownDescription": "Show borders in some area of the editor"
+        },
+        "viraLocal.contrastedTabs": {
+          "type": "boolean",
+          "default": false,
+          "scope": "window",
+          "markdownDescription": "Add more contrast to tabs by using a different background for the tabs bar"
+        },
+        "viraLocal.solidLineHighlight": {
+          "type": "boolean",
+          "default": false,
+          "scope": "window",
+          "markdownDescription": "Render a solid background highlight for the active line instead of a border"
+        },
+        "viraLocal.hidesExplorerArrows": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Hide arrow icons in the file explorer.",
+          "scope": "window"
+        },
+        "viraLocal.hidesShadows": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Hide shadows across the interface for a completely flat look.",
+          "scope": "window"
+        },
+        "viraLocal.disableItalics": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Disable italic font style for selected syntax scopes.",
+          "scope": "window"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "viraLocal.openSettings",
+        "title": "Open Settings",
+        "category": "Vira Local"
+      },
+      {
+        "command": "viraLocal.openWalkthrough",
+        "title": "Get Started",
+        "category": "Vira Local"
+      },
+      {
+        "command": "viraLocal.openColorThemePicker",
+        "title": "Open Vira Local Color Theme Picker",
+        "category": "Vira Local"
+      },
+      {
+        "command": "viraLocal.openOutlinedIconsSetting",
+        "title": "Open Outlined Icons Setting",
+        "category": "Vira Local"
+      },
+      {
+        "command": "viraLocal.accentPicker",
+        "title": "Set Accent Color",
+        "category": "Vira Local"
+      },
+      {
+        "command": "viraLocal.accentIntensityPicker",
+        "title": "Set Accent Intensity",
+        "category": "Vira Local"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Local Vira Teal",
+        "path": "./build/themes/Vira-Theme-Teal.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Teal",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Teal High Contrast",
+        "path": "./build/themes/Vira-Theme-Teal-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Teal High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Graphene",
+        "path": "./build/themes/Vira-Theme-Graphene.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Graphene",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Graphene High Contrast",
+        "path": "./build/themes/Vira-Theme-Graphene-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Graphene High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Palenight",
+        "path": "./build/themes/Vira-Theme-Palenight.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Palenight",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Palenight High Contrast",
+        "path": "./build/themes/Vira-Theme-Palenight-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Palenight High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Ocean",
+        "path": "./build/themes/Vira-Theme-Ocean.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Ocean",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Ocean High Contrast",
+        "path": "./build/themes/Vira-Theme-Ocean-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Ocean High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Deepforest",
+        "path": "./build/themes/Vira-Theme-Deepforest.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Deepforest",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Deepforest High Contrast",
+        "path": "./build/themes/Vira-Theme-Deepforest-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Deepforest High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Carbon",
+        "path": "./build/themes/Vira-Theme-Carbon.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Carbon",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Carbon High Contrast",
+        "path": "./build/themes/Vira-Theme-Carbon-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Carbon High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Anthracite",
+        "path": "./build/themes/Vira-Theme-Anthracite.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Anthracite",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Anthracite High Contrast",
+        "path": "./build/themes/Vira-Theme-Anthracite-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Anthracite High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Montana",
+        "path": "./build/themes/Vira-Theme-Montana.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Montana",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Montana High Contrast",
+        "path": "./build/themes/Vira-Theme-Montana-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Montana High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Sand",
+        "path": "./build/themes/Vira-Theme-Sand.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Sand",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Sand High Contrast",
+        "path": "./build/themes/Vira-Theme-Sand-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Sand High Contrast",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Clay",
+        "path": "./build/themes/Vira-Theme-Clay.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Clay",
+        "_watch": true
+      },
+      {
+        "label": "Local Vira Clay High Contrast",
+        "path": "./build/themes/Vira-Theme-Clay-High-Contrast.json",
+        "uiTheme": "vs-dark",
+        "id": "Local Vira Clay High Contrast",
+        "_watch": true
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "vira-local-icons-teal",
+        "label": "Local Vira Icons Teal",
+        "path": "./build/themes/Vira-Icons-Teal.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-graphene",
+        "label": "Local Vira Icons Graphene",
+        "path": "./build/themes/Vira-Icons-Graphene.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-palenight",
+        "label": "Local Vira Icons Palenight",
+        "path": "./build/themes/Vira-Icons-Palenight.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-ocean",
+        "label": "Local Vira Icons Ocean",
+        "path": "./build/themes/Vira-Icons-Ocean.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-deepforest",
+        "label": "Local Vira Icons Deepforest",
+        "path": "./build/themes/Vira-Icons-Deepforest.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-carbon",
+        "label": "Local Vira Icons Carbon",
+        "path": "./build/themes/Vira-Icons-Carbon.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-anthracite",
+        "label": "Local Vira Icons Anthracite",
+        "path": "./build/themes/Vira-Icons-Anthracite.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-montana",
+        "label": "Local Vira Icons Montana",
+        "path": "./build/themes/Vira-Icons-Montana.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-sand",
+        "label": "Local Vira Icons Sand",
+        "path": "./build/themes/Vira-Icons-Sand.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-icons-clay",
+        "label": "Local Vira Icons Clay",
+        "path": "./build/themes/Vira-Icons-Clay.json",
+        "_watch": true
+      }
+    ],
+    "productIconThemes": [
+      {
+        "id": "vira-local-solid",
+        "label": "Local Vira Solid",
+        "path": "./build/themes/Vira-Product-Icons-Solid.json",
+        "_watch": true
+      },
+      {
+        "id": "vira-local-outline",
+        "label": "Local Vira Outline",
+        "path": "./build/themes/Vira-Product-Icons-Outline.json",
+        "_watch": true
+      }
+    ],
+    "walkthroughs": [
+      {
+        "id": "viraLocal.getStarted",
+        "title": "Welcome to your new coding experience with Vira Local.",
+        "description": "A visual system for focus, tuned for long sessions in dark environments.",
+        "steps": [
+          {
+            "id": "variants",
+            "title": "Choose a color theme",
+            "description": "Pick among 10 color variants (and high-contrast options) for your coding experience.\n\n[Pick a color theme](command:viraLocal.openColorThemePicker)",
+            "media": {
+              "image": "media/walkthrough/variants.png",
+              "altText": "Illustration of switching Vira color theme variants"
+            },
+            "completionEvents": [
+              "onCommand:viraLocal.openColorThemePicker",
+              "onSettingChanged:workbench.colorTheme"
+            ]
+          },
+          {
+            "id": "accent",
+            "title": "Set your accent",
+            "description": "Accents make it personal. Choose a named accent that fits your theme or set a custom color — then optionally [adjust intensity](command:viraLocal.accentIntensityPicker).\n\n[Set the accent color](command:viraLocal.accentPicker)",
+            "media": {
+              "image": "media/walkthrough/accents.png",
+              "altText": "Illustration of Vira accent color choices"
+            },
+            "completionEvents": [
+              "onCommand:viraLocal.accentPicker",
+              "onCommand:viraLocal.accentIntensityPicker",
+              "onSettingChanged:viraLocal.accent",
+              "onSettingChanged:viraLocal.accentIntensity"
+            ]
+          },
+          {
+            "id": "icon-style",
+            "title": "Icons style",
+            "description": "Choose the appearance of the UI icons between solid or outlined. Open the setting and switch `Use Outlined Icons` to try both styles.\n\n[Change icons style](command:viraLocal.openOutlinedIconsSetting)",
+            "media": {
+              "image": "media/walkthrough/icons-style.png",
+              "altText": "Illustration of filled versus outlined folder icons"
+            },
+            "completionEvents": [
+              "onCommand:viraLocal.openOutlinedIconsSetting",
+              "onSettingChanged:viraLocal.useOutlinedIcons"
+            ]
+          },
+          {
+            "id": "explore-more",
+            "title": "Explore more settings",
+            "description": "Borders, shadows, tab contrast, italics, and more live in Vira Local settings — open them anytime from the Command Palette.\n\n[Explore more settings](command:viraLocal.openSettings)",
+            "media": {
+              "image": "media/walkthrough/explore-more.png",
+              "altText": "Illustration pointing to extension settings"
+            },
+            "completionEvents": [
+              "onCommand:viraLocal.openSettings"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GameNotCreator/style-extension-vscode.git"
+  }
+}

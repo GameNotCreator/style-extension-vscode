@@ -1,0 +1,10 @@
+node_modules/
+*.vsix
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+build/generated/
+.DS_Store
+Thumbs.db

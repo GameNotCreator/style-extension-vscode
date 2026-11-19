@@ -1,0 +1,745 @@
+{
+  "fonts": [
+    {
+      "id": "vira-ui-icons-solid",
+      "src": [
+        {
+          "path": "../assets/vira-ui-icons-solid.woff2",
+          "format": "woff2"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal"
+    }
+  ],
+  "iconDefinitions": {
+    "zap": {
+      "fontCharacter": "\\f101",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "window": {
+      "fontCharacter": "\\f102",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "window-compact": {
+      "fontCharacter": "\\f103",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "whole-word": {
+      "fontCharacter": "\\f104",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "whitespace": {
+      "fontCharacter": "\\f105",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "watch": {
+      "fontCharacter": "\\f106",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "warning": {
+      "fontCharacter": "\\f107",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "vira-logo": {
+      "fontCharacter": "\\f108",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "unfold": {
+      "fontCharacter": "\\f109",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "triangle-up": {
+      "fontCharacter": "\\f10a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "triangle-right": {
+      "fontCharacter": "\\f10b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "triangle-left": {
+      "fontCharacter": "\\f10c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "triangle-down": {
+      "fontCharacter": "\\f10d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "trash": {
+      "fontCharacter": "\\f10e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "tools": {
+      "fontCharacter": "\\f10f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "todos": {
+      "fontCharacter": "\\f110",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "text-uppercase": {
+      "fontCharacter": "\\f111",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "terminal": {
+      "fontCharacter": "\\f112",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "sync": {
+      "fontCharacter": "\\f113",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "sync-ignored": {
+      "fontCharacter": "\\f114",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "symbol-color": {
+      "fontCharacter": "\\f115",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "symbol-class": {
+      "fontCharacter": "\\f116",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "stop": {
+      "fontCharacter": "\\f117",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "star": {
+      "fontCharacter": "\\f118",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "star-half": {
+      "fontCharacter": "\\f119",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "star-full": {
+      "fontCharacter": "\\f11a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "split-vertical": {
+      "fontCharacter": "\\f11b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "split-horizontal": {
+      "fontCharacter": "\\f11c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "sparkle": {
+      "fontCharacter": "\\f11d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "sparkle-compact": {
+      "fontCharacter": "\\f11e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "source-control": {
+      "fontCharacter": "\\f11f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "sort-precedence": {
+      "fontCharacter": "\\f120",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "shield": {
+      "fontCharacter": "\\f121",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "settings": {
+      "fontCharacter": "\\f122",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "settings-view-bar-icon": {
+      "fontCharacter": "\\f123",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "settings-view-bar-alt": {
+      "fontCharacter": "\\f124",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "settings-gear": {
+      "fontCharacter": "\\f125",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "server": {
+      "fontCharacter": "\\f126",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "server-process": {
+      "fontCharacter": "\\f127",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "server-environment": {
+      "fontCharacter": "\\f128",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "send": {
+      "fontCharacter": "\\f129",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "selection": {
+      "fontCharacter": "\\f12a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "search": {
+      "fontCharacter": "\\f12b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "search-stop": {
+      "fontCharacter": "\\f12c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "search-save": {
+      "fontCharacter": "\\f12d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "search-1": {
+      "fontCharacter": "\\f12e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "run": {
+      "fontCharacter": "\\f12f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "rocket": {
+      "fontCharacter": "\\f130",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "replace": {
+      "fontCharacter": "\\f131",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "replace-all": {
+      "fontCharacter": "\\f132",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "remove": {
+      "fontCharacter": "\\f133",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "remote-explorer": {
+      "fontCharacter": "\\f134",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "regex": {
+      "fontCharacter": "\\f135",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "refresh": {
+      "fontCharacter": "\\f136",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "record-keys": {
+      "fontCharacter": "\\f137",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "radio-tower": {
+      "fontCharacter": "\\f138",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "preview": {
+      "fontCharacter": "\\f139",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "preserve-case": {
+      "fontCharacter": "\\f13a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "plus": {
+      "fontCharacter": "\\f13b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "plug": {
+      "fontCharacter": "\\f13c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "play": {
+      "fontCharacter": "\\f13d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "play-all": {
+      "fontCharacter": "\\f13e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "pinned": {
+      "fontCharacter": "\\f13f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "pin": {
+      "fontCharacter": "\\f140",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "pencil": {
+      "fontCharacter": "\\f141",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "pass": {
+      "fontCharacter": "\\f142",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "pass-filled": {
+      "fontCharacter": "\\f143",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "paperclip": {
+      "fontCharacter": "\\f144",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "panel-right": {
+      "fontCharacter": "\\f145",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "panel-left": {
+      "fontCharacter": "\\f146",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "paintcan": {
+      "fontCharacter": "\\f147",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "output": {
+      "fontCharacter": "\\f148",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "open-in-window": {
+      "fontCharacter": "\\f149",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "notifications-do-not-disturb": {
+      "fontCharacter": "\\f14a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "new-folder": {
+      "fontCharacter": "\\f14b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "new-file": {
+      "fontCharacter": "\\f14c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "mic": {
+      "fontCharacter": "\\f14d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "mic-filled": {
+      "fontCharacter": "\\f14e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "lock": {
+      "fontCharacter": "\\f14f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "live-share": {
+      "fontCharacter": "\\f150",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "list-tree": {
+      "fontCharacter": "\\f151",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "list-selection": {
+      "fontCharacter": "\\f152",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "list-flat": {
+      "fontCharacter": "\\f153",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "link-external": {
+      "fontCharacter": "\\f154",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "lightbulb": {
+      "fontCharacter": "\\f155",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "layout": {
+      "fontCharacter": "\\f156",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "keyboard": {
+      "fontCharacter": "\\f157",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "issues": {
+      "fontCharacter": "\\f158",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "info": {
+      "fontCharacter": "\\f159",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "infinity": {
+      "fontCharacter": "\\f15a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "home": {
+      "fontCharacter": "\\f15b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "history": {
+      "fontCharacter": "\\f15c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "heart": {
+      "fontCharacter": "\\f15d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gripper": {
+      "fontCharacter": "\\f15e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "go-to-file": {
+      "fontCharacter": "\\f15f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "globe": {
+      "fontCharacter": "\\f160",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-stash-save": {
+      "fontCharacter": "\\f161",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-prev-commit": {
+      "fontCharacter": "\\f162",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-next-commit": {
+      "fontCharacter": "\\f163",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-graph": {
+      "fontCharacter": "\\f164",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-gitlens": {
+      "fontCharacter": "\\f165",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gitlens-commit-horizontal": {
+      "fontCharacter": "\\f166",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "git-commit": {
+      "fontCharacter": "\\f167",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "git-branch": {
+      "fontCharacter": "\\f168",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "gear": {
+      "fontCharacter": "\\f169",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "folder": {
+      "fontCharacter": "\\f16a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "filter": {
+      "fontCharacter": "\\f16b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "files": {
+      "fontCharacter": "\\f16c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "file-directory": {
+      "fontCharacter": "\\f16d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "file-code": {
+      "fontCharacter": "\\f16e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "eye": {
+      "fontCharacter": "\\f16f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "extensions": {
+      "fontCharacter": "\\f170",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "extensions-install-count": {
+      "fontCharacter": "\\f171",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "extension-activation-time": {
+      "fontCharacter": "\\f172",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "explorer-view-icon": {
+      "fontCharacter": "\\f173",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "expand-all": {
+      "fontCharacter": "\\f174",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "exclude": {
+      "fontCharacter": "\\f175",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "error": {
+      "fontCharacter": "\\f176",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "ellipsis": {
+      "fontCharacter": "\\f177",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "edit": {
+      "fontCharacter": "\\f178",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "discard": {
+      "fontCharacter": "\\f179",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "diff-multiple": {
+      "fontCharacter": "\\f17a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug": {
+      "fontCharacter": "\\f17b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-stop": {
+      "fontCharacter": "\\f17c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-step-over": {
+      "fontCharacter": "\\f17d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-step-out": {
+      "fontCharacter": "\\f17e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-step-into": {
+      "fontCharacter": "\\f17f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-step-back": {
+      "fontCharacter": "\\f180",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-start": {
+      "fontCharacter": "\\f181",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-stackframe": {
+      "fontCharacter": "\\f182",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-stackframe-focused": {
+      "fontCharacter": "\\f183",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-reverse-continue": {
+      "fontCharacter": "\\f184",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-restart": {
+      "fontCharacter": "\\f185",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-restart-frame": {
+      "fontCharacter": "\\f186",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-pause": {
+      "fontCharacter": "\\f187",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-disconnect": {
+      "fontCharacter": "\\f188",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-continue": {
+      "fontCharacter": "\\f189",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-console": {
+      "fontCharacter": "\\f18a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "debug-alt": {
+      "fontCharacter": "\\f18b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "dashboard": {
+      "fontCharacter": "\\f18c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "compare-changes": {
+      "fontCharacter": "\\f18d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "comment": {
+      "fontCharacter": "\\f18e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "comment-discussion": {
+      "fontCharacter": "\\f18f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "collapse-all": {
+      "fontCharacter": "\\f190",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "code": {
+      "fontCharacter": "\\f191",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "code-review": {
+      "fontCharacter": "\\f192",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "cloud": {
+      "fontCharacter": "\\f193",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "cloud-download": {
+      "fontCharacter": "\\f194",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "close": {
+      "fontCharacter": "\\f195",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "close-all": {
+      "fontCharacter": "\\f196",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "clear-all": {
+      "fontCharacter": "\\f197",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "circles": {
+      "fontCharacter": "\\f198",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "circle-large-outline": {
+      "fontCharacter": "\\f199",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chevron-up": {
+      "fontCharacter": "\\f19a",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chevron-right": {
+      "fontCharacter": "\\f19b",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chevron-left": {
+      "fontCharacter": "\\f19c",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chevron-down": {
+      "fontCharacter": "\\f19d",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "check": {
+      "fontCharacter": "\\f19e",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chat": {
+      "fontCharacter": "\\f19f",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "chat-sparkle": {
+      "fontCharacter": "\\f1a0",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "case-sensitive": {
+      "fontCharacter": "\\f1a1",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "call-outgoing": {
+      "fontCharacter": "\\f1a2",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "call-incoming": {
+      "fontCharacter": "\\f1a3",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "bulb": {
+      "fontCharacter": "\\f1a4",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "bug": {
+      "fontCharacter": "\\f1a5",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "bracket": {
+      "fontCharacter": "\\f1a6",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "book": {
+      "fontCharacter": "\\f1a7",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "bell": {
+      "fontCharacter": "\\f1a8",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "bell-dot": {
+      "fontCharacter": "\\f1a9",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "beaker": {
+      "fontCharacter": "\\f1aa",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "auxiliarybar-maximize": {
+      "fontCharacter": "\\f1ab",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "attach": {
+      "fontCharacter": "\\f1ac",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "arrow-up": {
+      "fontCharacter": "\\f1ad",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "arrow-right": {
+      "fontCharacter": "\\f1ae",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "arrow-left": {
+      "fontCharacter": "\\f1af",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "arrow-down": {
+      "fontCharacter": "\\f1b0",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "ai-customization-skill": {
+      "fontCharacter": "\\f1b1",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "ai-customization-hook": {
+      "fontCharacter": "\\f1b2",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "ai-customization-agent": {
+      "fontCharacter": "\\f1b3",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "add": {
+      "fontCharacter": "\\f1b4",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "activate-breakpoints": {
+      "fontCharacter": "\\f1b5",
+      "fontId": "vira-ui-icons-solid"
+    },
+    "account": {
+      "fontCharacter": "\\f1b6",
+      "fontId": "vira-ui-icons-solid"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "accent": "Teal",
+  "customAccent": "",
+  "accentIntensity": "vivid",
+  "useOutlinedIcons": false,
+  "folderAccentMode": true,
+  "useTopTabIndicator": false,
+  "syncThemesAndIcons": true,
+  "syncProductIcons": true,
+  "showBorders": false,
+  "contrastedTabs": false,
+  "solidLineHighlight": false,
+  "hidesExplorerArrows": true,
+  "hidesShadows": false,
+  "disableItalics": false
+}

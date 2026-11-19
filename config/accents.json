@@ -1,0 +1,86 @@
+{
+  "Vira": {
+    "slug": "vira",
+    "soft": "#CCAE9E",
+    "normal": "#DAA990",
+    "vivid": "#E9A581"
+  },
+  "White": {
+    "slug": "white",
+    "soft": "#FFFFFF",
+    "normal": "#FFFFFF",
+    "vivid": "#FFFFFF"
+  },
+  "Tomato": {
+    "slug": "tomato",
+    "soft": "#C77B75",
+    "normal": "#DF665D",
+    "vivid": "#F85044"
+  },
+  "Orange": {
+    "slug": "orange",
+    "soft": "#CB8B76",
+    "normal": "#E57E5C",
+    "vivid": "#FF7042"
+  },
+  "Yellow": {
+    "slug": "yellow",
+    "soft": "#CAB472",
+    "normal": "#E4C158",
+    "vivid": "#FFCF3D"
+  },
+  "Acid Lime": {
+    "slug": "acid-lime",
+    "soft": "#9FB946",
+    "normal": "#B2DB24",
+    "vivid": "#C6FF00"
+  },
+  "Lime": {
+    "slug": "lime",
+    "soft": "#6AB97B",
+    "normal": "#52D16D",
+    "vivid": "#39EA5F"
+  },
+  "Teal": {
+    "slug": "teal",
+    "soft": "#95B6B3",
+    "normal": "#8BC0BB",
+    "vivid": "#80CBC4"
+  },
+  "Bright Teal": {
+    "slug": "bright-teal",
+    "soft": "#8FD4C4",
+    "normal": "#7AE9CF",
+    "vivid": "#64FFDA"
+  },
+  "Cyan": {
+    "slug": "cyan",
+    "soft": "#85BFD1",
+    "normal": "#6FCBE7",
+    "vivid": "#57D7FF"
+  },
+  "Blue": {
+    "slug": "blue",
+    "soft": "#829FD0",
+    "normal": "#6B99E7",
+    "vivid": "#5393FF"
+  },
+  "Indigo": {
+    "slug": "indigo",
+    "soft": "#9BA4D9",
+    "normal": "#8897EC",
+    "vivid": "#758AFF"
+  },
+  "Purple": {
+    "slug": "purple",
+    "soft": "#AD7ECE",
+    "normal": "#B166E6",
+    "vivid": "#B54DFF"
+  },
+  "Pink": {
+    "slug": "pink",
+    "soft": "#D590A9",
+    "normal": "#EA7BA4",
+    "vivid": "#FF669E"
+  }
+}
